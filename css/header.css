@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Gruppo&family=Hurricane&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mrs+Saint+Delafield&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+ font-family: "Roboto", sans-serif;
+ font-family: "Open Sans", sans-serif;
+ font-family: "Saira", sans-serif;
+ font-family: "Italianno", cursive;
+ font-family: "Dancing Script", cursive;
+ font-family: "Montserrat", sans-serif;
+ font-family: "Gruppo", sans-serif;----
+ font-family: "Great Vibes", cursive;
+ font-family: "Mrs Saint Delafield", cursive;
+ font-family: "Hurricane", cursive;
+  font-family: "Playfair Display", serif;
+*/
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.815);
+    padding: 1rem .5rem;
+    position: fixed;
+    z-index: 200;
+}
+header nav{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav .img-logo{
+    max-width: 50px;
+}
+header nav .logo img{
+    width: 100%;
+}
+header nav .slogan{
+    max-width: 200px;
+}
+header nav .slogan img{
+    width: 100%;
+}
+header nav .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    /*gap: 1rem;*/
+    gap: clamp(.5rem, 1vw, 1rem);
+}
+header nav .links .link{
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: .9rem;
+    padding: .5rem .7rem;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+header nav .links .link:hover{
+    background: rgb(66, 66, 66);
+
+}
+header nav .button-header{
+    color: black;
+    padding: .8rem 1.4rem;
+    font-family: "Montserrat", sans-serif;
+    background: white;
+    font-size: .9rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 25px;
+}
+header nav .button-header:hover{
+    background: aqua;
+}
+/*--------*/
+header nav .hamburger{
+    display: none;
+    z-index: 300;
+}
+/*--------*/
+@media(max-width: 916px){
+    header nav{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media(max-width: 794px){
+    
+    /*------*/
+    header nav .hamburger{
+    display: block;
+    z-index: 100;
+    }
+    header nav .hamburger-inner,
+    header nav .hamburger-inner::before,
+    header nav .hamburger-inner::after {
+        background-color: white;
+        height: 3px !important;
+    }
+    header nav .hamburger.is-active .hamburger-inner,
+    header nav .hamburger.is-active .hamburger-inner::before,
+    header nav .hamburger.is-active .hamburger-inner::after {
+        background-color: white;
+        height: 3px !important;
+    }
+                                              
+    /*-----*/
+    .header .nav .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    .header .nav .links{
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.87);
+        backdrop-filter: blur(10px);
+        padding-top: 5rem;
+        transform: translateX(100%);
+        z-index: 50;
+        transition: .4s ease-in-out;
+        padding-bottom: 3rem;
+    }
+    .header .nav .links.is-active{
+        transform: translateX(0%);
+    }
+    .header .nav .links .link{
+        font-size: 1.2rem;
+    }
+   
+}
+@media(max-width: 546px){
+    .header .nav .logo .img-logo{
+    display: none;
+}
+    .header .nav .button-header{
+        font-size: .7rem;
+    }
+}
+@media(max-width: 458px){
+    .header .nav .button-header{
+        display: none;
+    }
+}

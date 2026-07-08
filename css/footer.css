@@ -1,0 +1,22 @@
+.footer{
+    width: 100%;
+    padding: clamp(.5rem, 2.5vw, 2.5rem) clamp(.5rem, 1vw, 1rem);
+    /*padding: 2.5rem .5rem;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    background: #171a30;
+    background: radial-gradient(circle,rgba(23, 26, 48, 1) 0%, rgba(9, 11, 20, 1) 49%, rgba(9, 11, 20, 1) 100%);
+    font-family: "Montserrat", sans-serif;
+
+}
+.footer a,
+.footer h2{
+    color: rgba(255, 255, 255, 0.589);
+    text-decoration: none;
+    font-size: clamp(.6rem, .8vw, .8rem);
+    /*font-size: .8rem;*/
+    font-weight: 300;
+}

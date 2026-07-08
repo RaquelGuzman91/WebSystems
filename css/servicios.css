@@ -1,0 +1,215 @@
+.servicios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*gap: 2rem;*/
+    gap: clamp(.5rem, 2vw, 2rem);
+    background: #ebebec;
+    /*padding: 5rem .5rem;*/
+    padding: clamp(.5rem, 5vw, 5rem) clamp(.5rem, 1vw, 1rem);
+    position: relative;
+}
+.servicios::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+  --p: 110px; 
+  width: 50%;
+  height: 35px;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0,100% 0,100% 100%,var(--p) 100%);
+  background: white;
+
+}
+.servicios .titulo-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.servicios .titulo-servicios h3{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #007595;
+    font-weight: 800;
+}
+.servicios .titulo-servicios p{
+    color: #020618;
+    font-family: "Montserrat", sans-serif;
+    /*font-size: 2.6rem;*/
+    font-size: clamp(1rem, 2.6vw, 2.6rem);
+    font-weight: 700;
+}
+.servicios .creamos{
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /*padding: 2rem .5rem;*/
+    padding: clamp(.5rem, 2vw, 2rem) clamp(.5rem, 1vw, 1rem);
+}
+.servicios .creamos .card{
+    flex: 1 1 20rem;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: clamp(1rem, 1.7vw, 1.7rem);
+    box-shadow: 5px  5px 20px rgba(46, 46, 46, 0.4);
+    border: 1px solid rgba(153, 153, 153, 0.336);
+    border-radius: 35px;
+    transition: all 400ms ease;
+    overflow: hidden;
+}
+.servicios .creamos .card .x{
+    background: #1f5a73;
+    background: linear-gradient(168deg,rgba(31, 90, 115, 1) 0%, rgba(48, 27, 71, 1) 57%, rgba(19, 13, 34, 1) 100%);
+    padding: 1rem;
+    border-radius: 50%;
+    position: relative;
+    transition: all 400ms ease;
+}
+.servicios .creamos .card .x .icono-servicios{
+    padding: .5rem;
+}
+.servicios .creamos .card .icono-servicios svg{
+    fill: white;
+    width: 70px;
+    height: 79px;
+}
+.servicios .creamos .card .check-icon{
+    position: absolute;
+    z-index: 1;
+    font-size: 2.5rem;
+    text-decoration: none;
+    list-style: none;
+    bottom: -1rem;
+    right: -.50rem;
+    color: rgb(0, 160, 0);
+    border-radius: 200%;
+}
+.servicios .creamos .card:hover{
+    transform: translateY(-9px);
+}
+.servicios .creamos .card h3{
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+.servicios .creamos .card p{
+    font-family: "Montserrat", sans-serif;
+    font-size: .9rem;
+    color: rgb(75, 75, 75);
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+/*--------------*/
+.servicios .contenedor{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0px;
+}
+.servicios .contenedor .box{
+    flex: 1 1 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    padding: clamp(1rem, 1.7vw, 1.7rem);
+    /*padding: 1.7rem;*/
+    background: white;
+    border-radius: 35px;
+    height: 270px;
+    height: clamp(200px, 20vw, 270px);
+    border: 1px solid rgba(153, 153, 153, 0.336);
+    transition: all 400ms ease;
+}
+
+.servicios .contenedor .box a svg{
+    fill: #007595;
+    background: #dbf0f7;
+    height: 50px;
+    width: 50px;
+    padding: .8rem;
+    border-radius: 15px;
+}
+.servicios .contenedor .box h3{
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+.servicios .contenedor .box p{
+    font-family: "Montserrat", sans-serif;
+    font-size: .9rem;
+    color: rgb(75, 75, 75);
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.servicios .contenedor .box:hover{
+    transform: translateY(-9px);
+-webkit-box-shadow: -1px -1px 24px -1px rgba(0,0,0,0.33);
+-moz-box-shadow: -1px -1px 24px -1px rgba(0,0,0,0.33);
+box-shadow: -1px -1px 24px -1px rgba(0,0,0,0.33);
+}
+
+/*----------*/
+@media(max-width: 500px){
+    .servicios .contenedor{
+    width: 98%;
+}
+}
+
+/*-----iconos------*/
+.icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.box:hover .icon{
+  animation: shakeScale 0.6s ease;
+}
+
+
+@keyframes shakeScale {
+  0% { transform: scale(1.1) translateX(0); }
+  25% { transform: scale(1.2) translateX(-3px); }
+  50% { transform: scale(1.2) translateX(3px); }
+  75% { transform: scale(1.1) translateX(-2px); }
+  100% { transform: scale(1) translateX(0); }
+}
+
+/*-----media-----*/
+@media(max-width: 1341px){
+    .servicios .creamos{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /*padding: 2rem .5rem;*/
+    padding: clamp(.5rem, 2vw, 2rem) clamp(.5rem, 1vw, 1rem);
+}
+}
+@media(max-width: 703px){
+    .servicios .creamos .card{
+    height: 270px;
+}
+}

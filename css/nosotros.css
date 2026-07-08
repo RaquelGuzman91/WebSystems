@@ -1,0 +1,79 @@
+.nosotros{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros .main-nosotros{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /*padding: 7rem .5rem;*/
+    padding: clamp(.5rem, 7vw, 7rem) clamp(.5rem, 1vw,1rem);
+}
+.nosotros .main-nosotros .title-nosotros,
+.nosotros .main-nosotros .info-nosotros{
+    flex: 1 1 20rem;
+}
+.nosotros .main-nosotros .title-nosotros h3{
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    color: rgb(211, 84, 211);
+}
+.nosotros .main-nosotros .title-nosotros p{
+    /*font-size: 3rem;*/
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    line-height: clamp(1.7rem, 4vw, 4rem);
+    /*line-height: 4rem;*/
+}
+.nosotros .main-nosotros .info-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+.nosotros .main-nosotros .info-nosotros p{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(54, 54, 54);
+    line-height: 1.7rem;
+    font-size: 1rem;
+    font-size: clamp(.8rem, 1.2vw, 1.2rem);
+}
+.nosotros .main-nosotros .info-nosotros .nosotros-check{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    gap: 1rem;
+}
+.nosotros .main-nosotros .info-nosotros .nosotros-check .icon-info{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.nosotros .main-nosotros .info-nosotros .nosotros-check .icon-info a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #02b65c;
+}
+.nosotros .main-nosotros .info-nosotros .nosotros-check .icon-info h3{
+    font-size: 1rem;
+}
+
+
+/*---query----*/
+@media(max-width: 500px){
+    .nosotros .main-nosotros{
+    width: 98%;
+}
+}
