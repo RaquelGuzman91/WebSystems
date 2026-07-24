@@ -1,3 +1,16 @@
+
+            
+:root{
+    --azul-oscuro: #1e2d44;
+            --azul-primario: #2c3e5e;
+            --azul-deep: #1a1a2e;
+            --gris-plateado: #b8b8b8;
+            --gris-claro: #e6e6e6;
+            --blanco: #ffffff;
+            --fondo-claro: #f4f6f8;
+            --acento: #4a6fa5;
+}
+
 body{
     user-select: none;
 }
@@ -5,8 +18,8 @@ html{
     scroll-behavior: smooth;
 }
 .index{
-    background: #1f5a73;
-    background: linear-gradient(168deg,rgba(31, 90, 115, 1) 0%, rgba(48, 27, 71, 1) 57%, rgba(19, 13, 34, 1) 100%);
+    background: #171a30;
+    background: linear-gradient(168deg,rgba(31, 90, 115, 1) 0%, rgb(27, 31, 71) 57%, rgb(13, 14, 34) 100%);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -100,7 +113,7 @@ html{
     text-transform: capitalize;
     font-weight: 900;
     padding: 1rem 1.5rem;
-    border-radius: 35px;
+    border-radius: 15px;
     border: none;
     cursor: pointer;
     transition: all 400ms ease;

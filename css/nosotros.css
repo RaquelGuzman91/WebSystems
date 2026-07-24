@@ -23,13 +23,13 @@
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
-    color: rgb(211, 84, 211);
+    color: #007595;
 }
 .nosotros .main-nosotros .title-nosotros p{
     /*font-size: 3rem;*/
     font-size: clamp(1.5rem, 3vw, 3rem);
     font-family: "Montserrat", sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     line-height: clamp(1.7rem, 4vw, 4rem);
     /*line-height: 4rem;*/
 }

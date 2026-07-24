@@ -6,7 +6,7 @@
     /*padding: 4rem 0px;*/
     padding: clamp(.5rem, 4vw, 4rem);
     background: #171a30;
-    background: linear-gradient(342deg,rgba(23, 26, 48, 1) 0%, rgba(52, 34, 77, 1) 49%, rgba(9, 11, 20, 1) 100%);
+    background: linear-gradient(168deg,rgba(31, 90, 115, 1) 0%, rgb(27, 31, 71) 57%, rgb(13, 14, 34) 100%);
     position: relative;
     z-index: 2;
 }
@@ -48,8 +48,10 @@
     font-weight: 600;
     font-size: 1.2rem;
     text-transform: capitalize;
-    color: rgb(3, 224, 224);
+    color: white;
     z-index: 2;
+    text-shadow: 2px 3px 5px rgba(44, 44, 44, 0.74);
+    
 }
 .contacto .contacto-main .contacto-info h4{
     font-family: "Montserrat", sans-serif;
@@ -178,7 +180,7 @@
     color: white;
     font-size: .9rem;
     border-radius: 25px;
-    background: #090b14;
+    background:#17335c;
     border: none;
     text-transform: capitalize;
     font-weight: 800;

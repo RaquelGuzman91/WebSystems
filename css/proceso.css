@@ -1,0 +1,119 @@
+.proceso{
+    /*
+    background: #1f5a73;
+    background: linear-gradient(168deg,rgba(31, 90, 115, 1) 0%, rgb(27, 31, 71) 57%, rgb(13, 14, 34) 100%);
+    */
+    background: #171a30;
+    background: linear-gradient(168deg,rgba(31, 90, 115, 1) 0%, rgb(27, 31, 71) 57%, rgb(13, 14, 34) 100%);
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 4rem 0px;*/
+    padding: clamp(.5rem, 4vw, 4rem) clamp(.5rem, .5vw, .5rem);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.proceso::after{
+    content: '';
+    width: 600px;
+    height: 400px;
+    top : -20rem;
+    right: -7rem;
+    /*background: #1f5a73;*/
+    
+    border: solid 60px #1f5a733f;
+
+    position: absolute;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+.proceso::before{
+   content: "";
+    position: absolute;
+    --p: 110px;
+  width: 50%;
+  height: 35px;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+  background: #ebebec;
+  top: -1px;
+  left: 0;
+  z-index: 1;
+}
+.proceso .main-proceso{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.proceso .main-proceso .proceso-title{
+    text-align: center;
+}
+.proceso .main-proceso .proceso-title h3{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+.proceso .main-proceso .proceso-title h4{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    /*font-size: 2.7rem;*/
+    font-size: clamp(1rem, 2.7vw, 2.7rem);
+    font-weight: 700;
+}
+.proceso .main-proceso .proceso-title p{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    
+}
+.proceso .main-proceso .boxs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(.5rem, 1vw, 1rem);
+    padding: clamp(.5rem, 1vw, 1rem);
+}
+.proceso .main-proceso .boxs .box{
+    flex: 1 1 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*padding: 2rem;*/
+    padding: clamp(.7rem, 2vw, 2rem);
+    gap: .9rem;
+}
+.proceso .main-proceso .boxs .box span{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.603);
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proceso .main-proceso .boxs .box h3{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+}
+.proceso .main-proceso .boxs .box p{
+    color: rgba(255, 255, 255, 0.815);
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    font-size: .8rem;
+}
